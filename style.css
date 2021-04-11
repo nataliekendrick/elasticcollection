@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+@import url("https://use.typekit.net/jnv5djy.css");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
+
+body{
+  font-family: juniper-std, sans-serif;
+font-weight: 200;
+font-style: normal;
+background-color: black;
+
+
+}
+.tabs{
+  overflow: hidden;
+  color: black;
+  border: 1px solid pink; 
+
+
+}
+
+.tabs a {
+  float: right;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: white;
+  padding: 35px 22px;
+  margin: 0;
+  right: 50px;
+  bottom: -17px;
+
+}
+
+.tabs a:hover {
+  background-color: none;
+  text-decoration:underline;
+  color: black;
+}
+.tabs a.active {
+  background-color:none;
+  text-decoration:underline;
+}
+
+h1{
+  position: relative;
+  left:70px;
+  width: 1353px;
+  font-size: 72px;
+  border: 1px solid hotpink; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: 86px;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(90deg, #FAFF00 3.7%, #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*movieName (h2)*/
+
+h2{
+  font-family: Juniper Std;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
+
+}
+/*movieYear(h4)*/
+
+h4{
+  font-family: Dosis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+
+h5{
+  font-size: 20px;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  width: 600px;
+}
+
+.movieName{
+  display: none;
+}
+
+.movieName.active{
+  display: block;
+}
+
+.movieYear{
+  display: none;
+}
+
+.movieYear.active{
+  display: block;
+}
+
+.movieDirector{
+  display: none;
+}
+
+.movieDirector.active{
+  display: block;
+}
+
+.movieBio{
+  display: none;
+}
+
+.movieBio.active{
+  display: block;
+}
+
+
+.movie-container{
+  padding:2rem;
+  margin: 1rem;
+  border: 1px solid red;
+  background-image: linear-gradient(90deg, #FAFF00 3.7%, #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
+  position: absolute;
+  cursor: pointer;
+
+}
+
+.movie-contianer:hover{
+    cursor: pointer;
+    padding:12rem;
+}
+
+
+.bigmovieContainer.active {
+   display: block;
+}
+
+
+.coverwrap{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid blue; 
+
+
+}
+
+.bigmovieContainer{
+  border: 1px solid green; 
+
+}
+
+/*img:hover + h2 {
+
+  background: rgba(66, 255, 0, 0.65);
+ 
+}*/
+
+img{
+  width: 383px;
+  height: auto;
+  padding: 13px 15px;
+
+    
+}
+
+
+
+.body2{
+  background-color: black;
+  max-width: 10vh;
+  overflow-y: hidden;
+
+
+}
+
+.tabs2{
+      overflow: hidden;
+    color: black;
+    border: 1px solid pink;
+    width: 240px;
+    position: absolute;
+    right: 7px;
+    padding: 1px 42px;
+}
+
+.tabs2 a {
+  float: right;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: white;
+  padding: 35px 22px;
+  margin: 0;
+  right: 50px;
+  bottom: -17px;
+
+}
+
+.tabs2 a:hover {
+  background-color: none;
+  text-decoration:underline;
+  color: black;
+}
+.tabs2 a.active {
+  background-color:none;
+  text-decoration:underline;
+}
+
+.imgabout{
+  width: 268px;
+  height: auto;
+  padding: 13px 28px;
+
+}
+
+h3{
+    position: absolute;
+    width: 189px;
+    height: 86px;
+    left: 880px;
+    top: 244px;
+    font-size: 72px;
+    border: 1px solid hotpink;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 86px;
+    background: linear-gradient(90deg, #FAFF00 3.7%, #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    font-size: 30pt;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    width: 700px;
+
+    position: absolute;
+    right: 106px;
+    top: 377px;
+  }
+
+.container2{
+  padding: 0rem;
+  margin: 0rem;
+  border: 1px solid red; 
+  column-width: 29rem;
+  float: left;
+  width: 833px;
+
+}
+
+
+.coverwrap2{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -200px;
+  width: 659px;
+  
+  border: 1px solid blue; 
+  background-image: linear-gradient(90deg,#FAFF00 3.7% , #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
+  
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate; 
+  animation-iteration-count: infinite;   
+}
+
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px;}
+
+}
+
+
+
+
+
+
+
