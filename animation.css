@@ -2,7 +2,6 @@
 @import url("https://use.typekit.net/jnv5djy.css");
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
 
 body{
@@ -11,18 +10,24 @@ body{
   font-style: normal;
   background-color: black;
 
-
+  overflow: hidden;
 }
+
 .tabs{
+  border: 1px solid pink; 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  width: 95%;
+  justify-content: flex-end;
+  padding: 40px;
+
 
 }
 
 .headline{
+  border: 1px solid hotpink;
+  display: flex;
+  justify-content: center;
+
 }
 
 
@@ -30,6 +35,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid yellow; 
 
 }
 
@@ -66,88 +72,52 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-/*movieName (h2)*/
-
-h2{
-  font-family: Juniper Std;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 58px;
-  text-align: left;
-
+.text{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 222px;
 }
-/*movieYear,Bio,Director*/
 
-h3{
-  font-family: Dosis, sans-serif;;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 40px;
-  width: 150vh;
+p{
+    font-size: 30pt;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    width: 700px;
+  }
+
+ .imgabout{
+  width: 268px;
+  height: auto;
+  padding: 12px 14px;
 
 }
 
-h4{
-  font-family: 'Dosis', sans-serif;
-  font-style: bold;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  width: 100vh;
-}
+.container{
+  border: 1px solid red; 
 
 
-.movie-container{
-  background-image: linear-gradient(90deg, #FAFF00 3.7%, #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
-  position: fixed;
-  cursor: pointer;
-  display: none;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 8vh;
-  padding-left: 10vw; 
-  z-index: 1;
-
-}
-
-.movie-container:hover{
-  cursor: pointer;
-  padding:12rem;
-}
-
-.active{
-  display: inline-block;
-  
 }
 
 .coverwrap{
   display: flex;
   flex-wrap: wrap;
-
-}
-
-.bigmovieContainer.active{
-  display: block;
-}
-
-
-img{
-  width: 383px;
-  height: auto;
-  padding: 13px 15px;
+  width: 595px;
+  position: absolute;
+  top: 0px;
   
-    }
-
-img:hover{
-  filter: drop-shadow(8px 8px 8px gray);
+  border: 1px solid blue; 
+  background-image: linear-gradient(90deg,#FAFF00 3.7% , #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
 }
 
+.leftcolumn{
+  border: 12px solid purple;
+
+}
+
+.rightcolumn{
+  border: 12px solid green;
 
 
-
+}
 
 

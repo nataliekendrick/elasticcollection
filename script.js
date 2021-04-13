@@ -1,9 +1,4 @@
 
-/*setInterval(
-function () {
-  var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = "#"+randomColor;
-},5000);*/
 
 var Airtable = require("airtable"); 
 console.log(Airtable);
@@ -58,8 +53,8 @@ function showMovies() {
     //movieName.innerText = movie.fields.Name;
     //document.body.append(movieName);
 
-    var Container2 = document.createElement("div");
-    Container2.classList.add("bigmovieContainer");
+    var container2 = document.createElement("div");
+    container2.classList.add("bigmovieContainer");
 
 
     var movieContainer = document.createElement("div");
@@ -68,37 +63,34 @@ function showMovies() {
 
     var movieImage = document.createElement("img");
     movieImage.src = movie.fields.images[0].url;
-    
 
     var movieName = document.createElement("h2");
     movieName.classList.add("movieName")
     movieName.innerText = movie.fields.Name;
     movieContainer.append(movieName);
 
-    var movieYear = document.createElement("h4");
+    var movieYear = document.createElement("h3");
     movieYear.classList.add("movieYear")
     movieYear.innerText = movie.fields.Year;
     movieContainer.append(movieYear);
-
-    var movieDirector = document.createElement("h5");
+ 
+    var movieDirector = document.createElement("h4");
     movieDirector.classList.add("movieDirector")
     movieDirector.innerText = movie.fields.Director;
     movieContainer.append(movieDirector);
 
-    var movieBio = document.createElement("h5");
+    var movieBio = document.createElement("h3");
     movieBio.classList.add("movieBio")
     movieBio.innerText = movie.fields.Bio;
     movieContainer.append(movieBio);
 
     // add event listener to add active class to movie container
-    movieContainer.addEventListener("click", function(){
-      movieName.classList.toggle("active");
-      movieYear.classList.toggle("active");
-      movieDirector.classList.toggle("active");
-      movieBio.classList.toggle("active");
+    container2.addEventListener("click", function(){
+      movieContainer.classList.toggle("active");
     });
-   Container2.append(movieContainer);
-   Container2.append(movieImage);
-   document.querySelector(".coverwrap").appendChild(Container2);
+
+   container2.append(movieContainer);
+   container2.append(movieImage);
+   document.querySelector(".coverwrap").appendChild(container2);
   });
 }
