@@ -111,13 +111,34 @@ p{
 
 .leftcolumn{
   border: 12px solid purple;
+  position: relative;
 
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {top: 200px;}
+  to {top: 0px;}
 }
 
 .rightcolumn{
   border: 12px solid green;
+  position: relative;
+  margin: 5px;
 
+  animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
+@keyframes example {
+  from {top: 0px;}
+  to {top: 200px;}
 }
 
 

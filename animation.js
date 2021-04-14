@@ -57,14 +57,24 @@ function showMovies() {
     moviecontainer.classList.add("movie-container");
     document.querySelector(".coverwrap").append(moviecontainer);
 
-      var movieImage = document.createElement("img");
-      movieImage.src = movie.fields.images[0].url;
-      movieImage.classList.add("imgabout");
-      document.querySelector(".coverwrap").append(movieImage);
+      var movieNumber = movie.fields.number;
+      if (movieNumber <= 50){
+        var movieImage = document.createElement("img");
+        movieImage.src = movie.fields.images[0].url;
+        movieImage.classList.add("imgabout");
+        document.querySelector(".leftcolumn").append(movieImage);
+      }
+ 
 
 
   });
 }
+
+
+      //var movieImage = document.createElement("img");
+      // movieImage.src = movie.fields.images[0].url;
+      // movieImage.classList.add("imgabout");
+      // document.querySelector(".coverwrap").append(movieImage);
 
 //      var movieNumber = document.createElement("img");
  //     moveNumber.src = movie.fields.Number[<50].url;
