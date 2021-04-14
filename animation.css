@@ -14,7 +14,6 @@ body{
 }
 
 .tabs{
-  border: 1px solid pink; 
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -24,7 +23,6 @@ body{
 }
 
 .headline{
-  border: 1px solid hotpink;
   display: flex;
   justify-content: center;
 
@@ -35,7 +33,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid yellow; 
+
 
 }
 
@@ -92,53 +90,54 @@ p{
 
 }
 
-.container{
+/*.container{
   border: 1px solid red; 
-
-
-}
+}*/
 
 .coverwrap{
   display: flex;
   flex-wrap: wrap;
-  width: 595px;
+  width: 600px;
   position: absolute;
   top: 0px;
-  
-  border: 1px solid blue; 
+
   background-image: linear-gradient(90deg,#FAFF00 3.7% , #6AFFDB 29.53%, #F478FF 61.71%, #FFAC30 86.58%);
 }
 
 .leftcolumn{
-  border: 12px solid purple;
   position: relative;
+  width: 100px;
 
   animation-name: example;
-  animation-duration: 3s;
-  animation-fill-mode: backwards;
-  animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  from {top: 200px;}
-  to {top: 0px;}
-}
-
-.rightcolumn{
-  border: 12px solid green;
-  position: relative;
-  margin: 5px;
-
-  animation-name: example;
-  animation-duration: 3s;  
-  animation-fill-mode: forwards;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes example {
   from {top: 0px;}
-  to {top: 200px;}
+  to {top: -2250vh;}
 }
+
+.rightcolumn{
+  position: relative;
+  width: 300px;
+  left: 200px;
+
+  animation-name: example2;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example2 {
+  from {top: -2250vh;}
+  to {top: 0px;}
+}
+
 
 

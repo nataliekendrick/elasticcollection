@@ -55,17 +55,22 @@ function showMovies() {
 
     var moviecontainer = document.createElement("div");
     moviecontainer.classList.add("movie-container");
-    document.querySelector(".coverwrap").append(moviecontainer);
 
-      var movieNumber = movie.fields.number;
+      var movieNumber = movie.fields.Number;
+      console.log (movieNumber);
       if (movieNumber <= 50){
         var movieImage = document.createElement("img");
         movieImage.src = movie.fields.images[0].url;
         movieImage.classList.add("imgabout");
         document.querySelector(".leftcolumn").append(movieImage);
-      }
- 
 
+     } else{
+        var movieImage = document.createElement("img");
+        movieImage.src = movie.fields.images[0].url;
+        movieImage.classList.add("imgabout");
+        document.querySelector(".rightcolumn").append(movieImage);
+
+      }
 
   });
 }
